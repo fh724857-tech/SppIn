@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPINOX</title>
+</head>
+<body style="font-family: Arial; text-align: center; margin-top: 60px;">
+
+<h2>بوابة التفعيل</h2>
+
+<p>التوكن:</p>
+<div id="token" style="font-size:20px;color:blue;"></div>
+
+<script>
+const token = new URLSearchParams(window.location.search).get("token");
+document.getElementById("token").textContent = token || "لا يوجد توكن";
+</script>
+
+</body>
+</html>
